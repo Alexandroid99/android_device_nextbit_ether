@@ -3,7 +3,7 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwpa_client \
     wpa_supplicant \
-    wpa_supplicant.conf
+    wpa_supplicant.conf \
     android.hardware.wifi@1.0-service \
 
 PRODUCT_COPY_FILES += \
