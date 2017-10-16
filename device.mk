@@ -30,3 +30,9 @@ $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk
 
 # Call the proprietary setup
 $(call inherit-product, vendor/nextbit/ether/ether-vendor.mk)
+
+
+# Default OMX service to non-Treble
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.media.treble_omx=false
+

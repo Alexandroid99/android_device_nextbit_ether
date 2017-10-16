@@ -24,3 +24,11 @@ include $(DEVICE_PATH)/board/*.mk
 
 # Inherit from the proprietary version
 include vendor/nextbit/ether/BoardConfigVendor.mk
+
+
+
+# HIDL
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+
+
+# TARGET_USES_HWC2 := true
