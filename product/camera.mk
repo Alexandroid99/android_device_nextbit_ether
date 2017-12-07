@@ -14,4 +14,7 @@ PRODUCT_COPY_FILES += \
 # Camera HAL
 PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.2-impl \
-    android.hardware.camera.provider@2.4-impl
+    android.hardware.camera.provider@2.4-impl \
+    camera.msm8992 \
+    camera.device@3.2-impl \
+    mm-qcamera-app
