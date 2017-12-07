@@ -10,13 +10,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio_amplifier.msm8992
 
-# some extra tools
-PRODUCT_PACKAGES += \
-    tinycap \
-    tinymix \
-    tinypcminfo \
-    tinyplay
-
 # routes, paths, effects, policy
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf \
@@ -30,10 +23,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:system/etc/permissions/android.hardware.audio.low_latency.xml \
     frameworks/native/data/etc/android.software.midi.xml:system/etc/permissions/android.software.midi.xml  \
     frameworks/native/data/etc/android.software.sip.xml:system/etc/permissions/android.software.sip.xml
-
-# custom acdb path
-PRODUCT_PROPERTY_OVERRIDES += \
-    audio.acdb.name=NBQ
 
 # fast track settings
 PRODUCT_PROPERTY_OVERRIDES += \
