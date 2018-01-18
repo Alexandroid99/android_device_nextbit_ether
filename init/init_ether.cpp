@@ -65,9 +65,9 @@ static void init_alarm_boot_properties()
          */
         if ((Trim(boot_reason) == "3" || tmp == "true")
                 && Trim(power_off_alarm) == "1")
-            property_set("ro.alarm_boot", "true");
+            android::init::property_set("ro.alarm_boot", "true");
         else
-            property_set("ro.alarm_boot", "false");
+            android::init::property_set("ro.alarm_boot", "false");
     }
 }
 
