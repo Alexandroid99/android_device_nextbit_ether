@@ -24,7 +24,7 @@ include $(DEVICE_PATH)/board/*.mk
 
 # Inherit from the proprietary version
 include vendor/nextbit/ether/BoardConfigVendor.mk
-
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive selinux=0
 
 
 # HIDL
